@@ -1,0 +1,60 @@
+{
+  "name": "honda-crm-backend",
+  "version": "1.0.0",
+  "description": "Honda CRM backend with Express web framework template",
+  "scripts": {
+    "dev": "nodemon --exec ./node_modules/.bin/babel-node ./src/index.js",
+    "lint": "eslint --ext .js --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proflylab/express-template.git"
+  },
+  "author": {
+    "name": "Proflylab",
+    "email": "proflylab@pm.me",
+    "url": "https://github.com/proflylab"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/proflylab/express-template/issues"
+  },
+  "homepage": "https://github.com/proflylab/express-template#readme",
+  "lint-staged": {
+    "*.{js}": "npm lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-list-endpoints": "^6.0.0",
+    "express-validator": "^7.0.1",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.4.2",
+    "request-ip": "^3.3.0",
+    "tedious": "^16.1.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/eslint-parser": "^7.21.8",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.5",
+    "eslint": "^8.40.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8"
+  }
+}
