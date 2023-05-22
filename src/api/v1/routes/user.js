@@ -36,6 +36,15 @@ router.get('/me', async (req, res) => {
   return res.json(user)
 })
 
+router.post('/locale', async (req, res) => {
+  const {
+    user: { id },
+    body: { locale }
+  } = req
+  await knex('users').where({ id, deletedAt: null }).update({ locale })
+  return res.status(204).send()
+})
+
 router.get('/generate', async (req, res) => {
   const {
     query: { plain = 'P@ssw0rd' }
