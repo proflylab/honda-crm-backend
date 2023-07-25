@@ -1,4 +1,5 @@
+import carModels from './car-models'
 import customer from './customer'
 import user from './user'
 
-export { customer, user }
+export { carModels, customer, user }
