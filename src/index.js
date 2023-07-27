@@ -40,6 +40,6 @@ listEndpoints(api).map(({ path, methods }) =>
   methods.map((m) => console.log(`${m.padEnd(10)}api${path}`))
 )
 
-const ip = process.env.IP || '0.0.0.0'
+const ip = process.env.IP || '::'
 const port = process.env.PORT || 3000
-http.listen(port, ip, () => console.log(`Listening on ${ip}:${port}`))
+http.listen(port, '::', () => console.log(`Listening on ${ip}:${port}`))

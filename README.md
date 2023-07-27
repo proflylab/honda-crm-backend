@@ -28,7 +28,7 @@ create table customers
     lastName    nvarchar(100),
     type        int,
 
-    mobilePhone nvarchar(15),
+    phone       nvarchar(15),
     homePhone   nvarchar(15),
     officePhone nvarchar(15),
     remark      nvarchar(100),
